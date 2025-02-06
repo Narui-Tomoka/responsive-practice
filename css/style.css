@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+.size__change {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background: #ff0000;
+}
+@media screen and (max-width: 960px) {
+  .size__change {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+}
+.color__change {
+  margin: 0 auto;
+  background: #ff0000;
+}
+
+@media screen and (max-width: 960px) {
+  .color__change {
+    background: #007bff;
+  }
+}
+
+.d--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.margin__blue {
+  background: #0008ff;
+  margin-right: 150px;
+}
+@media screen and (max-width: 960px) {
+  .margin__blue {
+    margin-right: 50px;
+  }
+}
+
+.margin__green {
+  background: #22ff00;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+}
+
+.flt__red {
+  background: #ff0000;
+  float: left;
+}
+
+.flt__blue {
+  background: #0008ff;
+  margin-bottom: 40px;
+  float: left;
+}
+
+@media screen and (max-width: 960px) {
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.c--both {
+  clear: both;
+}
+
+.f--redbox {
+  background: #ff0000;
+}
+
+.f--bluebox {
+  background: #0008ff;
+}
+
+.f--orangebox {
+  background: #ff8400;
+}
+
+/* heightとline-heightを同じにして縦方向に中央寄せ */
+.f--text {
+  text-align: center;
+  height: 300px;
+  line-height: 300px;
+}
+
+@media screen and (max-width: 960px) {
+  .r--reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.f--greenbox {
+  background: #00ff51;
+}
+
+.f--lightgreenbox {
+  background: #d4ff00;
+}
+
+.f--pinkbox {
+  background: #ff00e1;
+}
+
+@media screen and (max-width: 960px) {
+  .order :nth-child(1) {
+    order: 2;
+  }
+  .order :nth-child(2) {
+    order: 3;
+  }
+  .order :nth-child(3) {
+    order: 1;
+  }
+}
+
+.d-red {
+  background: #ff0000;
+  position: relative;
+}
+
+.h-blue {
+  background: #0008ff;
+  position: absolute;
+  visibility: hidden;
+}
+@media screen and (max-width: 960px) {
+  .h-blue {
+    visibility: visible;
+  }
+}
+
+.d-green {
+  background: #00ff51;
+}
