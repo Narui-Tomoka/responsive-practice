@@ -76,15 +76,15 @@
   clear: both;
 }
 
-.f--redbox {
+.f--red--box {
   background: #ff0000;
 }
 
-.f--bluebox {
+.f--blue--box {
   background: #0008ff;
 }
 
-.f--orangebox {
+.f--orange--box {
   background: #ff8400;
 }
 
@@ -101,15 +101,15 @@
   }
 }
 
-.f--greenbox {
+.f--green--box {
   background: #00ff51;
 }
 
-.f--lightgreenbox {
+.f--lightgreen--box {
   background: #d4ff00;
 }
 
-.f--pinkbox {
+.f--pink--box {
   background: #ff00e1;
 }
 
