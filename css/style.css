@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* サイズ変更 */
 .size__change {
   width: 400px;
   height: 400px;
@@ -17,11 +18,12 @@
   width: 300px;
   height: 300px;
 }
+
+/* 色変更 */
 .color__change {
   margin: 0 auto;
   background: #ff0000;
 }
-
 @media screen and (max-width: 960px) {
   .color__change {
     background: #007bff;
@@ -34,6 +36,7 @@
   align-items: center;
 }
 
+/* margin値の変更 */
 .margin__blue {
   background: #0008ff;
   margin-right: 150px;
@@ -43,76 +46,69 @@
     margin-right: 50px;
   }
 }
-
 .margin__green {
   background: #22ff00;
 }
 
+/* floatの解除 */
 .container {
   width: 600px;
   margin: auto;
 }
-
 .flt__red {
   background: #ff0000;
   float: left;
 }
-
 .flt__blue {
   background: #0008ff;
   margin-bottom: 40px;
   float: left;
 }
-
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 @media screen and (max-width: 960px) {
-  .clearfix::after {
-    content: "";
-    display: block;
+  .flt__blue {
     clear: both;
   }
 }
 
-.c--both {
-  clear: both;
+/* flexboxの入れ替え（逆順） */
+.f--reverse {
+  flex-direction: row;
 }
-
 .f--red__box {
   background: #ff0000;
 }
-
 .f--blue__box {
   background: #0008ff;
 }
-
 .f--orange__box {
   background: #ff8400;
 }
-
-/* heightとline-heightを同じにして縦方向に中央寄せ */
 .f--text {
   text-align: center;
   height: 300px;
-  line-height: 300px;
+  line-height: 300px; /* heightとline-heightを同じにして縦方向に中央寄せ */
 }
-
 @media screen and (max-width: 960px) {
-  .r--reverse {
+  .f--reverse {
     flex-direction: row-reverse;
   }
 }
 
+/* flexboxの入れ替え（指定） */
 .f--green__box {
   background: #00ff51;
 }
-
 .f--lightgreen__box {
   background: #d4ff00;
 }
-
 .f--pink__box {
   background: #ff00e1;
 }
-
 @media screen and (max-width: 960px) {
   .order :nth-child(1) {
     order: 2;
@@ -125,22 +121,25 @@
   }
 }
 
+/* 要素の表示・非表示 */
 .d--red {
   background: #ff0000;
-  position: relative;
+  display: block;
 }
-
+@media screen and (max-width: 960px) {
+  .d--red {
+    display: none;
+  }
+}
 .h--blue {
   background: #0008ff;
-  position: absolute;
-  visibility: hidden;
+  display: none;
 }
 @media screen and (max-width: 960px) {
   .h--blue {
-    visibility: visible;
+    display: block;
   }
 }
-
 .d--green {
   background: #00ff51;
 }
