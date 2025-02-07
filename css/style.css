@@ -102,21 +102,24 @@
 /* flexboxの入れ替え（指定） */
 .f--green__box {
   background: #00ff51;
+  order: 1;
 }
 .f--lightgreen__box {
   background: #d4ff00;
+  order: 2;
 }
 .f--pink__box {
   background: #ff00e1;
+  order: 3;
 }
 @media screen and (max-width: 960px) {
-  .order :nth-child(1) {
+  .f--green__box {
     order: 2;
   }
-  .order :nth-child(2) {
+  .f--lightgreen__box {
     order: 3;
   }
-  .order :nth-child(3) {
+  .f--pink__box {
     order: 1;
   }
 }
