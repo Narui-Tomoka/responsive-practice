@@ -70,8 +70,11 @@
   clear: both;
 }
 @media screen and (max-width: 960px) {
+  .flt__red {
+    float: none;
+  }
   .flt__blue {
-    clear: both;
+    float: none;
   }
 }
 
